@@ -2,37 +2,37 @@
 class Druk < Formula
   desc "Terminal code editor"
   homepage "https://github.com/letstri/druk"
-  version "1.26.0"
+  version "1.26.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/letstri/druk/releases/download/v1.26.0/druk-darwin-arm64.zip"
-      sha256 "9625035f97037cdb30748dc3116b930ed404c29f17d6107ed2ba2cd10cbf7f94"
+      url "https://github.com/letstri/druk/releases/download/v1.26.1/druk-darwin-arm64.zip"
+      sha256 "3526da00283f9bb741dce0fab60244b80affc23b7bf47e90e1a1e3af1706c294"
     end
     on_intel do
-      url "https://github.com/letstri/druk/releases/download/v1.26.0/druk-darwin-x64.zip"
-      sha256 "95271e82221dfdbbbecf3444742944806a463c59be0f63dfbb2d70ac4407a89e"
+      url "https://github.com/letstri/druk/releases/download/v1.26.1/druk-darwin-x64.zip"
+      sha256 "043989729ca9fd4a0c318c91694f1af36897fb33fbc8509510866104905e2b23"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/letstri/druk/releases/download/v1.26.0/druk-linux-arm64.tar.gz"
-      sha256 "200dee59dd26cf6d66da088b1f1ed651900a5ad434602e9bbcfdec66677e7c1d"
+      url "https://github.com/letstri/druk/releases/download/v1.26.1/druk-linux-arm64.tar.gz"
+      sha256 "917ff8e5756bf9e25b72ca9f9443b5851b2b3cf3bc0be85046e69159c76bc1a6"
     end
     on_intel do
-      url "https://github.com/letstri/druk/releases/download/v1.26.0/druk-linux-x64.tar.gz"
-      sha256 "3db5a5d33b2d3ac5415bee7eb6badd19a389d251eb558f52067c99d3e3c0930c"
+      url "https://github.com/letstri/druk/releases/download/v1.26.1/druk-linux-x64.tar.gz"
+      sha256 "431b1305aa0c87d4005ae6b8c5b4b5503026a92e361f4999ca8bc12bd88626be"
     end
   end
 
   bottle do
-    root_url "https://github.com/letstri/druk/releases/download/v1.26.0"
-    sha256 cellar: :any_skip_relocation, arm64_ventura: "94e3ca7cbc1a8553eda337189d90d96704b02f8856531dd2634ef0538f3ec387"
-    sha256 cellar: :any_skip_relocation, ventura: "9d4857097173213b55ba261178490e4eb5b62d5604b185e1b4dceb122c4f1894"
-    sha256 cellar: :any_skip_relocation, arm64_linux: "215a8dd3327362fed69f4cb6becf48fdcdc820971b75449783bd7088cab8596e"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "f83a911a23e08fe80c7fa15cda090914da6697648ccff45da3311433b54b5189"
+    root_url "https://github.com/letstri/druk/releases/download/v1.26.1"
+    sha256 cellar: :any_skip_relocation, arm64_ventura: "5691a08cdc54c52d5e892fa37b96b46cf6aa5409eff6b5ba047188b8ee1f4519"
+    sha256 cellar: :any_skip_relocation, ventura: "b057131b86e5961b16bc60adb367f48021f906c8c52ddf2f0224d448d4075e4a"
+    sha256 cellar: :any_skip_relocation, arm64_linux: "e0afcc38ae4ced0bb32423b97a47ce694e7810ffb2ed933de2b6daf05cd6f084"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "e104996f15d917244cb21550f4fa0f0427e3c0f1b0d2926a612607e8d57804ad"
   end
 
   def install
